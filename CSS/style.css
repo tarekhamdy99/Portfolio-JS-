@@ -1,0 +1,55 @@
+/*? Global Custom Style*/
+
+/*^ Global Variables */
+:root {
+  --color-primary: #6366f1;
+  --color-secondary: #8b5cf6;
+  --transition-normal: 0.3s;
+}
+
+/*& End Global Custom Styles*/
+
+/*? Custom Styles For NavBar*/
+.customNav .nav-links a {
+  position: relative;
+}
+
+.customNav .nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    to left,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.customNav .nav-links a.active::after {
+  transform: scaleX(1);
+}
+/*& End Custom Styles For NavBar*/
+
+/*? Custom Styles For Nav And Tags*/
+
+#portfolio-filters .portfolio-filter.active {
+  background: linear-gradient(
+    to right in oklab,
+    rgb(99, 102, 241) 0%,
+    rgb(139, 92, 246) 100%
+  ) !important;
+  color: #ffffff !important;
+  box-shadow:
+    0 10px 15px -3px rgba(59, 130, 246, 0.5),
+    0 4px 6px -2px rgba(59, 130, 246, 0.2) !important;
+  transform: translateY(-1px) !important;
+}
+
+/*& End Custom Styles For Nav And Tags*/

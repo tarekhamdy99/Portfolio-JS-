@@ -101,7 +101,7 @@
     <!-- Main Stylesheet -->
     <link rel="stylesheet" crossorigin href="./CSS/tailwindStyle.css" />
     <!-- Custom Stylesheet -->
-    <link rel="stylesheet" crossorigin href="./CSS/s" />
+    <link rel="stylesheet" crossorigin href="./CSS/style.css" />
   </head>
   <body
     class="font-tajawal bg-gradient-to-br from-slate-100 via-slate-50 to-slate-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 text-slate-900 dark:text-white transition-colors duration-300"
@@ -118,7 +118,7 @@
       id="header"
       role="navigation"
       aria-label="التنقل الرئيسي"
-      class="fixed top-0 left-0 right-0 bg-white/95 dark:bg-slate-950/95 backdrop-blur-md z-50 border-b border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none"
+      class="customNav fixed top-0 left-0 right-0 bg-white/95 dark:bg-slate-950/95 backdrop-blur-md z-50 border-b border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none"
     >
       <div
         class="container mx-auto px-4 md:px-8 py-5 flex justify-between items-center"
@@ -138,7 +138,7 @@
         </div>
         <div class="nav-links flex gap-8 items-center" role="menubar">
           <a
-            class="text-slate-600 dark:text-slate-300 hover:text-primary transition-colors duration-300 text-lg"
+            class="active text-slate-600 dark:text-slate-300 hover:text-primary transition-colors duration-300 text-lg"
             href="#hero-section"
             role="menuitem"
             >الرئيسية</a
@@ -305,7 +305,7 @@
               >
                 <a
                   href="#portfolio"
-                  class="group relative inline-flex items-center gap-3 bg-gradient-to-l from-primary to-secondary px-8 py-4 rounded-2xl text-lg font-bold text-white overflow-hidden transition-all duration-300 hover:-translate-y-1"
+                  class="clickedLinks group relative inline-flex items-center gap-3 bg-gradient-to-l from-primary to-secondary px-8 py-4 rounded-2xl text-lg font-bold text-white overflow-hidden transition-all duration-300 hover:-translate-y-1"
                 >
                   <span class="relative z-10">استكشف أعمالي</span>
                   <i
@@ -317,7 +317,7 @@
                 </a>
                 <a
                   href="#contact"
-                  class="group inline-flex items-center gap-3 bg-white dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 text-slate-800 dark:text-white px-8 py-4 rounded-2xl text-lg font-bold transition-all duration-300 hover:border-primary hover:text-primary hover:-translate-y-1 hover:shadow-lg"
+                  class="clickedLinks group inline-flex items-center gap-3 bg-white dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 text-slate-800 dark:text-white px-8 py-4 rounded-2xl text-lg font-bold transition-all duration-300 hover:border-primary hover:text-primary hover:-translate-y-1 hover:shadow-lg"
                 >
                   <span>تواصل معي</span>
                   <i
@@ -1020,7 +1020,7 @@
             aria-label="فلترة المشاريع"
           >
             <button
-              class="portfolio-filter active px-8 py-3 rounded-xl bg-linear-to-r from-primary to-secondary text-white font-bold transition-all duration-300 hover:shadow-lg hover:shadow-primary/50"
+              class="portfolio-filter active px-8 py-3 rounded-xl bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-bold transition-all duration-300 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700"
               data-filter="all"
               aria-pressed="true"
               type="button"
@@ -1663,7 +1663,7 @@
           <div class="text-center mt-16">
             <a
               href="#contact"
-              class="inline-block bg-linear-to-r from-primary to-secondary px-12 py-4 rounded-xl text-lg font-bold text-white hover:-translate-y-1 transition-all duration-300"
+              class="clickedLinks inline-block bg-linear-to-r from-primary to-secondary px-12 py-4 rounded-xl text-lg font-bold text-white hover:-translate-y-1 transition-all duration-300"
             >
               <i class="fa-solid fa-rocket me-2"></i>
               لنبدأ مشروعك القادم
@@ -2372,13 +2372,13 @@
               <div class="flex justify-center gap-4 flex-wrap">
                 <a
                   href="#contact"
-                  class="bg-linear-to-r from-primary to-secondary text-white px-10 py-4 rounded-xl font-bold hover:shadow-xl hover:shadow-primary/30 transition-all duration-300"
+                  class="clickedLinks bg-linear-to-r from-primary to-secondary text-white px-10 py-4 rounded-xl font-bold hover:shadow-xl hover:shadow-primary/30 transition-all duration-300"
                 >
                   تواصل معي الآن
                 </a>
                 <a
                   href="#portfolio"
-                  class="border-2 border-primary dark:border-white text-primary dark:text-white px-10 py-4 rounded-xl font-bold hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-slate-900 transition-all duration-300"
+                  class="clickedLinks border-2 border-primary dark:border-white text-primary dark:text-white px-10 py-4 rounded-xl font-bold hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-slate-900 transition-all duration-300"
                 >
                   شاهد المزيد من الأعمال
                 </a>
@@ -3022,7 +3022,7 @@
     <!-- Scroll to Top Button -->
     <button
       id="scroll-to-top"
-      class="fixed left-8 bottom-8 bg-gradient-to-tr from-primary to-accent hover:from-secondary hover:to-primary text-white w-14 h-14 rounded-full shadow-lg hover:shadow-2xl hover:shadow-primary/50 flex items-center justify-center transition-all duration-300 opacity-0 invisible z-50 hover:scale-110 group"
+      class="clickedLinks fixed left-8 bottom-8 bg-gradient-to-tr from-primary to-accent hover:from-secondary hover:to-primary text-white w-14 h-14 rounded-full shadow-lg hover:shadow-2xl hover:shadow-primary/50 flex items-center justify-center transition-all duration-300 opacity-0 invisible z-50 hover:scale-110 group"
       aria-label="العودة للأعلى"
       type="button"
     >
